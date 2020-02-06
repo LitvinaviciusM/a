@@ -1,0 +1,31 @@
+[{
+  "user": 1, 
+  "id": 1, 
+  "url": "http://localhost:3000/gallery/1.jpg",
+  "likes": 67
+}, {
+  "user": 1, 
+  "id": 2, 
+  "url": "http://localhost:3000/gallery/2.png",
+  "likes": 23
+}, {
+  "user": 1, 
+  "id": 3, 
+  "url": "http://localhost:3000/gallery/3.jpg",
+  "likes": 200
+}, {
+  "user": 1, 
+  "id": 4, 
+  "url": "http://localhost:3000/gallery/4.jpg",
+  "likes": 212
+}, {
+  "user": 1, 
+  "id": 5, 
+  "url": "http://localhost:3000/gallery/5.jpg",
+  "likes": 9001
+}, {
+  "user": 1, 
+  "id": 6, 
+  "url": "http://localhost:3000/gallery/6.jpg",
+  "likes": 6
+}]
