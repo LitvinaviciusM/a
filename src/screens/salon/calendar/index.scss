@@ -1,0 +1,40 @@
+@import 'react-big-calendar/lib/sass/styles';
+
+.rbc-calendar {
+  min-height: 60vh;
+}
+
+.rbc-header {
+  border-bottom: none;
+  padding: 0;
+
+  & + .rbc-header {
+    border-bottom: none;
+    border-left: none;
+  }
+}
+
+.rbc-month-view {
+  border: none;
+}
+
+.rbc-month-row + .rbc-month-row {
+  border-top: none;
+}
+
+.rbc-day-bg + .rbc-day-bg {
+  border-left: none;
+}
+
+.rbc-today {
+  background: none;
+}
+
+.rbc-off-range-bg {
+  background: none;
+}
+
+.rbc-date-cell {
+  padding-right: 0;
+  text-align: center;
+}

@@ -5,26 +5,24 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const Carousel = ({
+const Carousel = React.forwardRef(({
   className,
+  settings,
   slides,
   slideComponent: Slide,
-}) => (
-  <div className={className}>
-    <Slider
-      arrows
-      autoplay
-      autoplaySpeed={4000}
-      infinite
-      slidesToShow={2}
-      slidesToScroll={1}
-      speed={2000}
-    >
+  slideComponentProps,
+}, ref) => (
+  <div className={className} ref={ref}>
+    <Slider {...settings}>
       {slides.map(s => (
-        <Slide key={s.id} {...s} />
+        <Slide
+          key={s.id}
+          {...s}
+          {...slideComponentProps}
+        />
       ))}
     </Slider>
   </div>
-);
+));
 
 export default Carousel;

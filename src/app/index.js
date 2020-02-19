@@ -1,19 +1,17 @@
 import React from 'react';
 
-// Components
-import Calendar from 'calendar';
-import Cover from 'cover';
+// Screens
+import Salon from 'screens/salon';
 
 // Contexts
-import ApiProvider from 'context/api';
+import ApiProvider from 'contexts/api';
 
 // Styling
 import './index.scss';
 
 const App = () => (
   <ApiProvider>
-    <Cover />
-    <Calendar />
+    <Salon />
   </ApiProvider>
 );
 

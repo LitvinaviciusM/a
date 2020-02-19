@@ -3,7 +3,9 @@ import { Calendar as ReactBigCalendar, momentLocalizer } from 'react-big-calenda
 import moment from 'moment'
 
 // Components
-import Event from 'calendar/event';
+import Toolbar from 'screens/salon/calendar/toolbar';
+import MonthHeader from 'screens/salon/calendar/monthheader';
+import MonthDateHeader from 'screens/salon/calendar/monthdateheader';
 
 // Styling
 import './index.scss';
@@ -15,8 +17,13 @@ const Calendar = () => (
     localizer={localizer}
     events={[]}
     components={{
-      event: Event,
+      toolbar: Toolbar,
+      month: {
+        header: MonthHeader,
+        dateHeader: MonthDateHeader,
+      },
     }}
+    views={['month', 'day']}
   />
 );
 

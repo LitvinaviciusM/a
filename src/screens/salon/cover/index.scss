@@ -1,0 +1,8 @@
+.cover {
+  display: flex;
+  flex-direction: column;
+
+  &__slider {
+    width: 100%;
+  }
+}
