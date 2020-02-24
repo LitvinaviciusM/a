@@ -3,9 +3,9 @@ import { Calendar as ReactBigCalendar, momentLocalizer } from 'react-big-calenda
 import moment from 'moment'
 
 // Components
-import Toolbar from 'screens/salon/calendar/toolbar';
-import MonthHeader from 'screens/salon/calendar/monthheader';
-import MonthDateHeader from 'screens/salon/calendar/monthdateheader';
+import Toolbar from 'screens/facilitator/calendar/toolbar';
+import MonthHeader from 'screens/facilitator/calendar/monthheader';
+import MonthDateHeader from 'screens/facilitator/calendar/monthdateheader';
 
 // Styling
 import './index.scss';

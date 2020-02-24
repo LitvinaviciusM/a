@@ -1,17 +1,20 @@
 import React from 'react';
 
 // Screens
-import Salon from 'screens/salon';
+import Facilitator from 'screens/facilitator';
 
 // Contexts
 import ApiProvider from 'contexts/api';
+import MuiProvider from 'contexts/mui';
 
 // Styling
 import './index.scss';
 
 const App = () => (
   <ApiProvider>
-    <Salon />
+    <MuiProvider>
+      <Facilitator />
+    </MuiProvider>
   </ApiProvider>
 );
 

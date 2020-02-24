@@ -3,7 +3,7 @@ import moment from 'moment'
 
 // Material UI
 import IconButton from '@material-ui/core/IconButton';
-import FlagIcon from '@material-ui/icons/Flag';
+import Typography from '@material-ui/core/Typography';
 
 const MonthDateHeader = ({
   date,
@@ -20,9 +20,9 @@ const MonthDateHeader = ({
       onClick={onDrillDown}
       size="small"
     >
-      {isToday ? (
-        <FlagIcon color="secondary" />
-      ) : label}
+      <Typography color={isToday ? 'secondary' : 'primary'}>
+        {label}
+      </Typography>
     </IconButton>
   );
 };
